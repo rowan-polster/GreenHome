@@ -7,21 +7,59 @@
     <title>Document</title>
 </head>
 <body>
-    <img src="./images/GreenHome-version1.png" alt="Home" usemap="#home">
+    <div>
+        <img src="./images/GreenHome-version1.png" alt="Home" usemap="#home">
 
-    <map name="home">
-        <area shape="circle" coords="169, 208, 30" alt="windows" onclick="myFunction()" onmouseover="areaHover()">
-        <area shape="circle" coords="448, 227, 30" alt="wall" onclick="myFunction()" onmouseover="areaHover()">
-        <area shape="circle" coords="230, 354, 30" alt="acUnit" onclick="myFunction()" onmouseover="areaHover()">
-        <area shape="circle" coords="546, 516, 30" alt="floor" onclick="myFunction()" onmouseover="areaHover()">
-        <area shape="circle" coords="673, 272, 30" alt="fridge" onclick="myFunction()" onmouseover="areaHover()">
-    </map>
+        <map name="home">
+            <button><area id="windows" shape="circle" coords="169, 208, 30" alt="windows" onclick="myFunction()" onmouseover="areaHover()"></button>
+            <area id="wall" shape="circle" coords="448, 227, 30" alt="wall" onclick="myFunction()" onmouseover="areaHover()">
+            <area id="acUnit" shape="circle" coords="230, 354, 30" alt="acUnit" onclick="myFunction()" onmouseover="areaHover()">
+            <area id="floor" shape="circle" coords="546, 516, 30" alt="floor" onclick="myFunction()" onmouseover="areaHover()">
+            <area id="fridge" shape="circle" coords="673, 272, 30" alt="fridge" onclick="myFunction()" onmouseover="areaHover()">
+        </map>
+
+    </div>
+
+    <!--placeholder Modal-->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <p>Testing the modal!</p>
+        </div>
+      
+      </div>
 </body>
 
 <script>
     function myFunction() {
 
-      console.log("Hello World!");
+      // Get the modal
+    var modal = document.getElementById("myModal");
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("windows");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks the button, open the modal 
+    btn.onclick = function() {
+        modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
       
     }
 
