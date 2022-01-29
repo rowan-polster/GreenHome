@@ -8,11 +8,24 @@
     <link rel="stylesheet" href="bootstrap.min.css" />
     <link rel="stylesheet" href="custom.css" />
     <title>Document</title>
+    <style>
+      .hidden {
+        position: absolute;
+        display: none;
+      }
+    </style>
   </head>
   <body>
     <div class="d-flex justify-content-center align-content-center">
       <!--Image Map-->
       <img src="./images/GreenHome-version1.png" alt="Home" usemap="#home" />
+      <img
+        src="./images/GreenHome-window-outline.png"
+        alt="Window"
+        id="windows-hover"
+        class="hidden"
+        usemap="#home"
+      />
       <map name="home">
         <area
           id="windows"
@@ -20,7 +33,8 @@
           coords="169, 208, 30"
           alt="windows"
           onclick="areaClick(event)"
-          onmouseover="areaHover()"
+          onmouseover="areaHover(event)"
+          onmouseover="areaOut(event)"
           href="#"
         />
         <area
@@ -29,7 +43,7 @@
           coords="448, 227, 30"
           alt="wall"
           onclick="areaClick(event)"
-          onmouseover="areaHover()"
+          onmouseover="areaHover(event)"
           href="#"
         />
         <area
@@ -38,7 +52,7 @@
           coords="230, 354, 30"
           alt="AC unit"
           onclick="areaClick(event)"
-          onmouseover="areaHover()"
+          onmouseover="areaHover(event)"
           href="#"
         />
         <area
@@ -47,7 +61,7 @@
           coords="546, 516, 30"
           alt="floor"
           onclick="areaClick(event)"
-          onmouseover="areaHover()"
+          onmouseover="areaHover(event)"
           href="#"
         />
         <area
@@ -56,7 +70,7 @@
           coords="673, 272, 30"
           alt="fridge"
           onclick="areaClick(event)"
-          onmouseover="areaHover()"
+          onmouseover="areaHover(event)"
           href="#"
         />
       </map>

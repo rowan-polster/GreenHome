@@ -41,8 +41,30 @@ function areaClick(e) {
   };
 }
 
-function areaHover() {
+function areaHover(e) {
+  let hoveredId = e.target.id;
+  console.log("hovering: ", hoveredId);
+
+  console.log(hoveredId);
+  if (hoveredId == "windows") {
+    document.getElementById("windows-hover").style.display = "inline";
+    console.log("hovered on windows");
+  }
+
+  console.log("hovering still?");
+  // check what is being hovered over
+  // if it is window, change image's display to inline
+
   // for (let i = 0; i < document.getElementsByTagName("area").length; i++) {
   //   document.getElementsByTagName("area")[i].style.cursor = "pointer";
   // }
+}
+
+function areaOut(e) {
+  let hoveredId = e.target.id;
+  console.log(hoveredId);
+  if (hoveredId == "windows") {
+    document.getElementById("windows-hover").style.display = "none";
+    console.log("hovered on windows");
+  }
 }
