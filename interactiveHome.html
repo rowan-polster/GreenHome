@@ -1,36 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bootstrap.css" />
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <link rel="stylesheet" href="custom.css" />
     <title>Document</title>
-</head>
-<body>
-    <img src="./images/GreenHome-version1.png" alt="Home" usemap="#home">
+  </head>
+  <body>
+    <div class="d-flex justify-content-center align-content-center">
+      <img src="./images/GreenHome-version1.png" alt="Home" usemap="#home" />
 
-    <map name="home">
-        <area shape="circle" coords="169, 208, 30" alt="windows" onclick="myFunction()" onmouseover="areaHover()">
-        <area shape="circle" coords="448, 227, 30" alt="wall" onclick="myFunction()" onmouseover="areaHover()">
-        <area shape="circle" coords="230, 354, 30" alt="acUnit" onclick="myFunction()" onmouseover="areaHover()">
-        <area shape="circle" coords="546, 516, 30" alt="floor" onclick="myFunction()" onmouseover="areaHover()">
-        <area shape="circle" coords="673, 272, 30" alt="fridge" onclick="myFunction()" onmouseover="areaHover()">
-    </map>
-</body>
+      <map name="home">
+        <area
+          id="windows"
+          shape="circle"
+          coords="169, 208, 30"
+          alt="windows"
+          onclick="areaClick(event)"
+          onmouseover="areaHover()"
+        />
+        <area
+          id="wall"
+          shape="circle"
+          coords="448, 227, 30"
+          alt="wall"
+          onclick="areaClick(event)"
+          onmouseover="areaHover()"
+        />
+        <area
+          id="acUnit"
+          shape="circle"
+          coords="230, 354, 30"
+          alt="acUnit"
+          onclick="areaClick(event)"
+          onmouseover="areaHover()"
+        />
+        <area
+          id="floor"
+          shape="circle"
+          coords="546, 516, 30"
+          alt="floor"
+          onclick="areaClick(event)"
+          onmouseover="areaHover()"
+        />
+        <area
+          id="fridge"
+          shape="circle"
+          coords="673, 272, 30"
+          alt="fridge"
+          onclick="areaClick(event)"
+          onmouseover="areaHover()"
+        />
+      </map>
+    </div>
 
-<script>
-    function myFunction() {
+    <!--Modal-->
+    <div class="modal" id="myModal">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <img
+              src="./images/GreenHomePenguin-icon.png"
+              class="penguin-icon"
+              height="120px"
+            />
+            <div class="d-flex justify-content-center">
+              <h5 class="modal-title">Green Windows</h5>
+            </div>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true"></span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Modal body text goes here.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 
-      console.log("Hello World!");
-      
+  <script>
+    function areaClick(e) {
+      var clickedId = e.target.id;
+
+      var modalText = {
+        windows: { title: "Windows", body: "Windows Lorem ipsum" },
+        wall: { title: "Wall", body: "Wall Lorem ipsum" },
+        acUnit: { title: "AC Unit", body: "AC Lorem ipsum" },
+        floor: { title: "Floor", body: "Floor Lorem ipsum" },
+        fridge: { title: "Fridge", body: "Fridge Lorem ipsum" }
+      };
+
+      // Get the modal
+      var modal = document.getElementById("myModal");
+
+      // Get the button that opens the modal
+      var btn = document.getElementById(clickedId);
+
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("btn-close")[0];
+
+      //Switch out modal's head and body text
+      var title = document.getElementsByClassName("modal-title")[0];
+      title.innerHTML = modalText[clickedId].title;
+
+      var body = document.getElementsByClassName("modal-body")[0];
+      body.innerHTML = modalText[clickedId].body;
+
+      // When the user clicks the button, open the modal
+      modal.style.display = "block";
+
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function () {
+        modal.style.display = "none";
+      };
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
     }
 
     function areaHover() {
-        
-        for (let i = 0; i < document.getElementsByTagName("area").length; i++){
-
-            document.getElementsByTagName("area")[i].style.cursor = "pointer";
-        }
+      for (let i = 0; i < document.getElementsByTagName("area").length; i++) {
+        document.getElementsByTagName("area")[i].style.cursor = "pointer";
+      }
     }
-    </script>
+  </script>
 </html>
