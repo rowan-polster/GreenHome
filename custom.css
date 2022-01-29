@@ -1,0 +1,15 @@
+.title {
+    text-align: center;
+    line-height: 400px;
+    font-size: 75px;
+}
+
+#blurb {
+    overflow-x: auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-size: 15px;
+}
+
+
+
