@@ -42,7 +42,7 @@ function areaClick(e) {
 }
 
 function areaHover() {
-  for (let i = 0; i < document.getElementsByTagName("area").length; i++) {
-    document.getElementsByTagName("area")[i].style.cursor = "pointer";
-  }
+  // for (let i = 0; i < document.getElementsByTagName("area").length; i++) {
+  //   document.getElementsByTagName("area")[i].style.cursor = "pointer";
+  // }
 }
