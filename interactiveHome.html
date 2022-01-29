@@ -1,86 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="bootstrap.css" />
-        <link rel="stylesheet" href="bootstrap.min.css" />
-        <link rel="stylesheet" href="custom.css" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="bootstrap.css" />
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <link rel="stylesheet" href="custom.css" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="d-flex justify-content-center align-content-center">
-        <img src="./images/GreenHome-version1.png" alt="Home" usemap="#home">
+      <img src="./images/GreenHome-version1.png" alt="Home" usemap="#home" />
 
-        <map name="home">
-            <button id="windows"><area shape="circle" coords="169, 208, 30" alt="windows" onclick="myFunction()" onmouseover="areaHover()"></button>
-            <area id="wall" shape="circle" coords="448, 227, 30" alt="wall" onclick="myFunction()" onmouseover="areaHover()">
-            <area id="acUnit" shape="circle" coords="230, 354, 30" alt="acUnit" onclick="myFunction()" onmouseover="areaHover()">
-            <area id="floor" shape="circle" coords="546, 516, 30" alt="floor" onclick="myFunction()" onmouseover="areaHover()">
-            <area id="fridge" shape="circle" coords="673, 272, 30" alt="fridge" onclick="myFunction()" onmouseover="areaHover()">
-        </map>
-
+      <map name="home">
+        <area
+          id="windows"
+          shape="circle"
+          coords="169, 208, 30"
+          alt="windows"
+          onclick="myFunction()"
+          onmouseover="areaHover()"
+        />
+        <area
+          id="wall"
+          shape="circle"
+          coords="448, 227, 30"
+          alt="wall"
+          onclick="myFunction()"
+          onmouseover="areaHover()"
+        />
+        <area
+          id="acUnit"
+          shape="circle"
+          coords="230, 354, 30"
+          alt="acUnit"
+          onclick="myFunction()"
+          onmouseover="areaHover()"
+        />
+        <area
+          id="floor"
+          shape="circle"
+          coords="546, 516, 30"
+          alt="floor"
+          onclick="myFunction()"
+          onmouseover="areaHover()"
+        />
+        <area
+          id="fridge"
+          shape="circle"
+          coords="673, 272, 30"
+          alt="fridge"
+          onclick="myFunction()"
+          onmouseover="areaHover()"
+        />
+      </map>
     </div>
 
     <!--Modal-->
     <div class="modal" id="myModal">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <img src="./images/GreenHomePenguin-icon.png" class="penguin-icon" height="120px">
-              <div class="d-flex justify-content-center">
-                 <h5 class="modal-title">Green Windows</h5>
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <img
+              src="./images/GreenHomePenguin-icon.png"
+              class="penguin-icon"
+              height="120px"
+            />
+            <div class="d-flex justify-content-center">
+              <h5 class="modal-title">Green Windows</h5>
             </div>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true"></span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <p>Modal body text goes here.</p>
-            </div>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true"></span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Modal body text goes here.</p>
           </div>
         </div>
       </div>
-</body>
+    </div>
+  </body>
 
-<script>
+  <script>
     function myFunction() {
+      // Get the modal
+      var modal = document.getElementById("myModal");
 
-        // Get the modal
-        var modal = document.getElementById("myModal");
+      // Get the button that opens the modal
+      var btn = document.getElementById("windows");
 
-        // Get the button that opens the modal
-        var btn = document.getElementById("windows");
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("btn-close")[0];
 
-        // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("btn-close")[0];
+      // When the user clicks the button, open the modal
+      btn.onclick = function () {
+        modal.style.display = "block";
+      };
 
-        // When the user clicks the button, open the modal 
-        btn.onclick = function() {
-            modal.style.display = "block";
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function () {
+        modal.style.display = "none";
+      };
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
         }
-
-        // When the user clicks on <span> (x), close the modal
-        span.onclick = function() {
-            modal.style.display = "none";
-        }
-
-        // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function(event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        }
-      
+      };
     }
 
     function areaHover() {
-        
-        for (let i = 0; i < document.getElementsByTagName("area").length; i++){
-
-            document.getElementsByTagName("area")[i].style.cursor = "pointer";
-        }
+      for (let i = 0; i < document.getElementsByTagName("area").length; i++) {
+        document.getElementsByTagName("area")[i].style.cursor = "pointer";
+      }
     }
-    </script>
+  </script>
 </html>
