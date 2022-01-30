@@ -80,22 +80,32 @@ function openModal(e) {
 
   // Check if button has already been clicked before updating progress bar
   if (modalText[clickedId].clicked === false) {
-    updateProgress();
+    updateProgress(clickedId);
     modalText[clickedId].clicked = true;
   }
 }
 
-function updateProgress() {
+function updateProgress(buttonId) {
   progress += 20;
 
-  let progressBar = document.getElementsByClassName("progress-bar")[0];
-  progressBar.style.width = progress + "%";
-  progressBar.ariaValuenow = progress;
+  // Change button to complete ✔️
+  let button = document.getElementById(buttonId);
+  button.style.backgroundColor = "#e4ffc5"; // alt: d7ffc5
+  button.style.boxShadow = " 0 0 10px rgba(11, 80, 5, 0.6)";
 
-  // Enable button to next page
-  if (progress == 100) {
-    let greenhomeButton = document.getElementById("greenhome-button");
-    greenhomeButton.classList.remove("disabled");
+  // Update progress bar if it exists
+  if (
+    typeof document.getElementsByClassName("progress-bar")[0] !== "undefined"
+  ) {
+    let progressBar = document.getElementsByClassName("progress-bar")[0];
+    progressBar.style.width = progress + "%";
+    progressBar.ariaValuenow = progress;
+
+    // Enable button to next page
+    if (progress == 100) {
+      let greenhomeButton = document.getElementById("greenhome-button");
+      greenhomeButton.classList.remove("disabled");
+    }
   }
 }
 
