@@ -79,5 +79,10 @@
 
 /* PROGRESS BAR */
 .progress {
-  width: 50%;
+  /* width: 50%; */
+  width: 800px;
+}
+
+.progress-bar {
+  width: 2%;
 }
