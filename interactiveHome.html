@@ -7,14 +7,43 @@
     <link rel="stylesheet" href="bootstrap.css" />
     <link rel="stylesheet" href="bootstrap.min.css" />
     <link rel="stylesheet" href="custom.css" />
+    <link rel="stylesheet" href="interactiveHome.css" />
     <title>Document</title>
   </head>
   <body>
     <div class="d-flex justify-content-center align-content-center">
       <!--Image Map-->
       <img src="./images/GreenHome-version1.png" alt="Home" usemap="#home" />
+      <div class="button-container" height="593px" width="1024px">
+        <button
+          id="windows"
+          class="circle-button"
+          onclick="openModal(event)"
+        ></button>
+        <button
+          id="wall"
+          class="circle-button"
+          onclick="openModal(event)"
+        ></button>
+        <button
+          id="acUnit"
+          class="circle-button"
+          onclick="openModal(event)"
+        ></button>
+        <button
+          id="floor"
+          class="circle-button"
+          onclick="openModal(event)"
+        ></button>
+        <button
+          id="fridge"
+          class="circle-button"
+          onclick="openModal(event)"
+        ></button>
+      </div>
+
       <map name="home">
-        <area
+        <!-- <area
           id="windows"
           shape="circle"
           coords="169, 208, 30"
@@ -22,8 +51,8 @@
           onclick="areaClick(event)"
           onmouseover="areaHover()"
           href="#"
-        />
-        <area
+        /> -->
+        <!-- <area
           id="wall"
           shape="circle"
           coords="448, 227, 30"
@@ -31,8 +60,8 @@
           onclick="areaClick(event)"
           onmouseover="areaHover()"
           href="#"
-        />
-        <area
+        /> -->
+        <!-- <area
           id="acUnit"
           shape="circle"
           coords="230, 354, 30"
@@ -40,8 +69,8 @@
           onclick="areaClick(event)"
           onmouseover="areaHover()"
           href="#"
-        />
-        <area
+        /> -->
+        <!-- <area
           id="floor"
           shape="circle"
           coords="546, 516, 30"
@@ -49,16 +78,16 @@
           onclick="areaClick(event)"
           onmouseover="areaHover()"
           href="#"
-        />
-        <area
+        /> -->
+        <!-- <area
           id="fridge"
           shape="circle"
           coords="673, 272, 30"
           alt="fridge"
           onclick="areaClick(event)"
           onmouseover="areaHover()"
-          href="#"
-        />
+          href="#" 
+        /> -->
       </map>
     </div>
 
