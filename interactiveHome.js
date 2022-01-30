@@ -68,9 +68,10 @@ function updateProgress() {
   let progressBar = document.getElementsByClassName("progress-bar")[0];
   progressBar.style.width = progress + "%";
   progressBar.ariaValuenow = progress;
-  console.log(progressBar);
 
-  // If last on progress, enable button?
+  if (progress == 100) {
+    // Enable button to next page
+  }
 }
 
 function areaHover() {
