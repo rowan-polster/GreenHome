@@ -25,6 +25,31 @@ let modalText = {
     title: "Fridge",
     body: `<p>According to the most recent climate report by the IPCC, the largest producer of CO2 emissions is the transportation sector. This includes the food we eat - meaning eating locally is a far more sustainable option. Community Supported Agriculture (CSA) is a fantastic way to support local farms, eat healthier produce, and lower your carbon footprint. Find a CSA near you!</p><a href="https://www.ams.usda.gov/local-food-directories/csas" target="_blank" rel="noopener noreferrer">Check it out!</a>`,
     clicked: false
+  },
+  "green-windows": {
+    title: "Windows Placeholder",
+    body: `<p>Lorem ipsum</p><a href="https://www.ams.usda.gov/local-food-directories/csas" target="_blank" rel="noopener noreferrer">Check it out!</a>`,
+    clicked: false
+  },
+  "green-fan": {
+    title: "Fan Placeholder",
+    body: `<p>Lorem ipsum</p><a href="https://www.ams.usda.gov/local-food-directories/csas" target="_blank" rel="noopener noreferrer">Check it out!</a>`,
+    clicked: false
+  },
+  "green-fridge": {
+    title: "Fridge Placeholder",
+    body: `<p>Lorem ipsum</p><a href="https://www.ams.usda.gov/local-food-directories/csas" target="_blank" rel="noopener noreferrer">Check it out!</a>`,
+    clicked: false
+  },
+  plants: {
+    title: "Plant Placeholder",
+    body: `<p>Lorem ipsum</p><a href="https://www.ams.usda.gov/local-food-directories/csas" target="_blank" rel="noopener noreferrer">Check it out!</a>`,
+    clicked: false
+  },
+  "green-floor": {
+    title: "Floor Placeholder",
+    body: `<p>Lorem ipsum</p><a href="https://www.ams.usda.gov/local-food-directories/csas" target="_blank" rel="noopener noreferrer">Check it out!</a>`,
+    clicked: false
   }
 };
 let progress = 0;
