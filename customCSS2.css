@@ -1,14 +1,37 @@
-.title {
+
+.green {
+    font-family: 'Mali', cursive;
     text-align: center;
     line-height: 400px;
     font-size: 75px;
+    animation: fadeIn linear 1s;
+
 }
+
+.home {
+    font-family: 'Mali', cursive;
+    text-align: center;
+    line-height: 400px;
+    font-size: 75px;
+    animation: fadeIn linear 1s;
+}
+
+#house {
+    color: black;
+}
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+  }
 
 .lp-blurb {
     margin-left: 425px;
 }
 
-  
+
+/*landing page button*/
+
   .wrapper{
     position: fixed;
     top: 70%;
@@ -66,3 +89,4 @@
     border: 3px solid #2ecc71;
     right: -25%;
   }
+
