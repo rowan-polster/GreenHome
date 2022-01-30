@@ -27,28 +27,28 @@ let modalText = {
     clicked: false
   },
   "green-windows": {
-    title: "Windows Placeholder",
-    body: `<p>Lorem ipsum</p><a href="https://www.ams.usda.gov/local-food-directories/csas" target="_blank" rel="noopener noreferrer">Check it out!</a>`,
+    title: "Solar Panel Windows",
+    body: `<p>Solar panel windows incentivise more window usage, resulting in greater natural lighting. Dark homes with minimal light are a thing of the past!</p>`,
     clicked: false
   },
   "green-fan": {
-    title: "Fan Placeholder",
-    body: `<p>Lorem ipsum</p><a href="https://www.ams.usda.gov/local-food-directories/csas" target="_blank" rel="noopener noreferrer">Check it out!</a>`,
+    title: "Algae Lamp",
+    body: `<p>Algae absorbs CO2 from the air and generates light without the use of external power.</p>  <p>This lamp design is based on <a href="https://inhabitat.com/gyula-bodonyis-algae-powered-led-is-truly-a-green-light-bulb/" target="_blank" rel="noopener noreferrer">this algae lamp here.</a></p>`,
     clicked: false
   },
   "green-fridge": {
-    title: "Fridge Placeholder",
-    body: `<p>Lorem ipsum</p><a href="https://www.ams.usda.gov/local-food-directories/csas" target="_blank" rel="noopener noreferrer">Check it out!</a>`,
+    title: "Fridge",
+    body: `<p>Eating locally means not only lowering your carbon footprint, but supporting local businesses as well. Growing your own small garden, joining a CSA, and shopping at local farmer’s markets are great ways to eat sustainably.</p>`,
     clicked: false
   },
   plants: {
-    title: "Plant Placeholder",
-    body: `<p>Lorem ipsum</p><a href="https://www.ams.usda.gov/local-food-directories/csas" target="_blank" rel="noopener noreferrer">Check it out!</a>`,
+    title: "Indoor Plants",
+    body: `<p>More natural lighting means more plants. Greenspace can be used simply for aesthetic appeal, cleaning the air, and potentially improving mental health, or they can potentially be used for <a href="https://www.biootech.com/research" target="_blank" rel="noopener noreferrer">generating energy</a>.</p><p>Beyond this, indoor herb and vegetable gardens are more doable as well.</p>`,
     clicked: false
   },
   "green-floor": {
-    title: "Floor Placeholder",
-    body: `<p>Lorem ipsum</p><a href="https://www.ams.usda.gov/local-food-directories/csas" target="_blank" rel="noopener noreferrer">Check it out!</a>`,
+    title: "Bamboo Floor",
+    body: `<p>Besides being a more sustainable building material, bamboo is durable and looks just as beautiful as hardwood.</p>`,
     clicked: false
   }
 };

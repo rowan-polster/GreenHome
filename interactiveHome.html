@@ -20,33 +20,38 @@
       <div style="position: relative; width: 1024px; height: 593px">
         <img
           src="./images/GreenHome-version1.png"
-          alt="Home"
+          alt="Single-room home that includes a bed and windows on the left wall, a TV and kitchenette on the back wall, and a table and couch in front of the right wall"
           style="position: absolute"
         />
 
         <div class="button-container" height="593px" width="1024px">
           <button
             id="windows"
+            aria-label="Open windows info"
             class="circle-button"
             onclick="openModal(event)"
           ></button>
           <button
             id="fan"
+            aria-label="Open ceiling fan info"
             class="circle-button"
             onclick="openModal(event)"
           ></button>
           <button
             id="acUnit"
+            aria-label="Open air purifier info"
             class="circle-button"
             onclick="openModal(event)"
           ></button>
           <button
             id="floor"
+            aria-label="Open floor info"
             class="circle-button"
             onclick="openModal(event)"
           ></button>
           <button
             id="fridge"
+            aria-label="Open fridge info"
             class="circle-button"
             onclick="openModal(event)"
           ></button>
@@ -64,7 +69,11 @@
         ></div>
       </div>
 
-      <a href="./GreenHome.html" id="greenhome-button" class="btn btn-outline-success disabled">
+      <a
+        href="./GreenHome.html"
+        id="greenhome-button"
+        class="btn btn-outline-success disabled"
+      >
         See My GreenHome
       </a>
     </div>
@@ -78,6 +87,7 @@
               src="./images/GreenHomePenguin-icon.png"
               class="penguin-icon"
               height="120px"
+              alt="Penguin mascot"
             />
             <h5 class="modal-title">Green Windows</h5>
             <button
@@ -89,9 +99,7 @@
               <span aria-hidden="true"></span>
             </button>
           </div>
-          <div class="modal-body">
-            <p>Placeholder</p>
-          </div>
+          <div class="modal-body"></div>
         </div>
       </div>
     </div>
