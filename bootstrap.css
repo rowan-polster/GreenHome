@@ -3125,6 +3125,12 @@ fieldset:disabled .btn {
   background-color: #555;
   border-color: #555;
 }
+.btn-secondary-penguin {
+  color: #fff;
+  background-color: rgb(255, 255, 255);
+  border-color: rgb(255, 255, 255);
+}
+
 
 .btn-secondary:hover {
   color: #fff;
@@ -6391,7 +6397,7 @@ fieldset:disabled .btn {
   padding: 0.25rem 0.5rem;
   color: #fff;
   text-align: center;
-  background-color: #000;
+  background-color: var(--bs-success);
   border-radius: 25px;
 }
 

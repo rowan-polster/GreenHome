@@ -40,6 +40,11 @@
     left: 50%;
     
   }
+
+  .penguin {
+    padding-left: 90px;
+    padding-top: 15px;
+  }
   
   
   a{
