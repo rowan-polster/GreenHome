@@ -6071,7 +6071,11 @@ fieldset:disabled .btn {
 
 .modal-title {
   margin-bottom: 0;
+  padding-left: 25px;
   line-height: 1.5;
+  display: flex;
+  justify-content: center;
+  font-size: xx-large;
 }
 
 .modal-body {
@@ -6079,6 +6083,15 @@ fieldset:disabled .btn {
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
   padding: 1rem;
+  font-size: large;
+}
+
+.modal-link {
+  position: relative;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 1rem;
+  font-size: large;
 }
 
 .modal-footer {
