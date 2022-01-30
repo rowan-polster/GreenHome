@@ -1,3 +1,9 @@
+polygon:hover {
+  cursor: pointer;
+  stroke: rgba(22, 74, 133, 0.6);
+  box-shadow: 0 0 10px rgba(22, 74, 133, 0.6);
+}
+
 /* BUTTONS */
 .button-container {
   width: 1024px;
