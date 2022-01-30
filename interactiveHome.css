@@ -1,0 +1,88 @@
+/* BUTTONS */
+.button-container {
+  width: 1024px;
+  position: absolute;
+  height: 593px;
+}
+
+.circle-button {
+  position: absolute;
+
+  border: none;
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  background-color: #e9f1f9;
+  box-shadow: 0 0 10px rgba(22, 74, 133, 0.6);
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+}
+
+.circle-button:hover {
+  height: 32px;
+  width: 32px;
+  color: rgba(255, 255, 255, 1);
+  box-shadow: 0 0 15px rgba(14, 82, 160, 0.6);
+}
+
+#windows {
+  left: 208px;
+  top: 216px;
+}
+
+#windows:hover {
+  /* Center expand on hover */
+  left: 206px;
+  top: 214px;
+}
+
+#fan {
+  left: 400px;
+  top: 20px;
+}
+
+#fan:hover {
+  /* Center expand on hover */
+  left: 398px;
+  top: 18px;
+}
+
+#acUnit {
+  left: 230px;
+  top: 354px;
+}
+
+#acUnit:hover {
+  left: 228px;
+  top: 352px;
+}
+
+#floor {
+  left: 546px;
+  top: 516px;
+}
+
+#floor:hover {
+  left: 544px;
+  top: 514px;
+}
+
+#fridge {
+  left: 658px;
+  top: 260px;
+}
+
+#fridge:hover {
+  left: 656px;
+  top: 258px;
+}
+
+/* PROGRESS BAR */
+.progress {
+  /* width: 50%; */
+  width: 800px;
+}
+
+.progress-bar {
+  width: 2%;
+}
