@@ -1,3 +1,4 @@
+/* BUTTONS */
 .button-container {
   width: 1024px;
   position: absolute;
@@ -74,4 +75,9 @@
 #fridge:hover {
   left: 656px;
   top: 258px;
+}
+
+/* PROGRESS BAR */
+.progress {
+  width: 50%;
 }
