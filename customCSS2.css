@@ -26,17 +26,19 @@
   }
 
 .lp-blurb {
-    margin-left: 425px;
+    margin-left: auto;
 }
 
 
 /*landing page button*/
 
   .wrapper{
+    margin: auto;
+    transform: translate(-50%, -50%);
     position: fixed;
     top: 70%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    
   }
   
   
