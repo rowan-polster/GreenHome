@@ -53,12 +53,10 @@ function openModal(e) {
   // When the user clicks the button, open the modal
   modal.style.display = "block";
 
-  // Check if this button has already been clicked before updating progress bar
+  // Check if button has already been clicked before updating progress bar
   if (modalText[clickedId].clicked === false) {
-    console.log("clicked yet?: ", modalText[clickedId].clicked);
     updateProgress();
     modalText[clickedId].clicked = true;
-    console.log("clicked yet?: ", modalText[clickedId].clicked);
   }
 }
 
@@ -69,8 +67,10 @@ function updateProgress() {
   progressBar.style.width = progress + "%";
   progressBar.ariaValuenow = progress;
 
+  // Enable button to next page
   if (progress == 100) {
-    // Enable button to next page
+    let greenhomeButton = document.getElementById("greenhome-button");
+    greenhomeButton.classList.remove("disabled");
   }
 }
 
