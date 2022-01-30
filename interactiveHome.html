@@ -12,37 +12,44 @@
   </head>
   <body>
     <div
-      class="d-flex flex-column justify-content-center align-content-center align-items-center align-self-center"
+      class="d-flex flex-column align-items-center justify-content-center"
       width="100%"
       style="height: 100vh"
     >
-      <img src="./images/GreenHome-version1.png" alt="Home" />
-      <div class="button-container" height="593px" width="1024px">
-        <button
-          id="windows"
-          class="circle-button"
-          onclick="openModal(event)"
-        ></button>
-        <button
-          id="fan"
-          class="circle-button"
-          onclick="openModal(event)"
-        ></button>
-        <button
-          id="acUnit"
-          class="circle-button"
-          onclick="openModal(event)"
-        ></button>
-        <button
-          id="floor"
-          class="circle-button"
-          onclick="openModal(event)"
-        ></button>
-        <button
-          id="fridge"
-          class="circle-button"
-          onclick="openModal(event)"
-        ></button>
+      <div style="position: relative; width: 1024px; height: 593px">
+        <img
+          src="./images/GreenHome-version1.png"
+          alt="Home"
+          style="position: absolute"
+        />
+
+        <div class="button-container" height="593px" width="1024px">
+          <button
+            id="windows"
+            class="circle-button"
+            onclick="openModal(event)"
+          ></button>
+          <button
+            id="fan"
+            class="circle-button"
+            onclick="openModal(event)"
+          ></button>
+          <button
+            id="acUnit"
+            class="circle-button"
+            onclick="openModal(event)"
+          ></button>
+          <button
+            id="floor"
+            class="circle-button"
+            onclick="openModal(event)"
+          ></button>
+          <button
+            id="fridge"
+            class="circle-button"
+            onclick="openModal(event)"
+          ></button>
+        </div>
       </div>
 
       <!-- Progress Bar -->
