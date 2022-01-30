@@ -35,15 +35,15 @@
   top: 214px;
 }
 
-#wall {
-  left: 420px;
-  top: 205px;
+#fan {
+  left: 400px;
+  top: 20px;
 }
 
-#wall:hover {
+#fan:hover {
   /* Center expand on hover */
-  left: 418px;
-  top: 203px;
+  left: 398px;
+  top: 18px;
 }
 
 #acUnit {
