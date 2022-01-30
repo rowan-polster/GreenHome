@@ -1,22 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="bootstrap.css" />
     <link rel="stylesheet" href="bootstrap.min.css" />
     <link rel="stylesheet" href="custom.css" />
     <link rel="stylesheet" href="interactiveHome.css" />
     <title>Green Home</title>
-</head>
-<body>
+  </head>
+  <body>
     <div
-        class="d-flex flex-column align-items-center justify-content-center"
-        width="100%"
-        style="height: 100%; min-height: 100vh"
+      class="d-flex flex-column align-items-center justify-content-center"
+      width="100%"
+      style="height: 100%; min-height: 100vh"
     >
       <img src="./images/GreenHome-version2.png" alt="greenHome" />
+      <div class="button-container" height="593px" width="1024px">
+        <button
+          id="green-windows"
+          class="circle-button"
+          onclick="openModal(event)"
+        ></button>
+        <button
+          id="plants"
+          class="circle-button"
+          onclick="openModal(event)"
+        ></button>
+        <button
+          id="green-fan"
+          class="circle-button"
+          onclick="openModal(event)"
+        ></button>
+        <button
+          id="green-fridge"
+          class="circle-button"
+          onclick="openModal(event)"
+        ></button>
+        <button
+          id="green-floor"
+          class="circle-button"
+          onclick="openModal(event)"
+        ></button>
+      </div>
     </div>
-</body>
+
+    <!--Modal-->
+    <div class="modal" id="myModal">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <img
+              src="./images/GreenHomePenguin-icon.png"
+              class="penguin-icon"
+              height="120px"
+            />
+            <h5 class="modal-title">Green Windows</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true"></span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Placeholder</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script type="text/javascript" src="interactiveHome.js"></script>
 </html>

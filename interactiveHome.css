@@ -77,6 +77,58 @@
   top: 258px;
 }
 
+/* GREEN HOME BUTTONS */
+#green-windows {
+  left: 156px;
+  top: 216px;
+}
+
+#green-windows:hover {
+  left: 154px;
+  top: 214px;
+}
+
+#plants {
+  left: 594px;
+  top: 379px;
+}
+
+#plants:hover {
+  left: 592px;
+  top: 377px;
+}
+
+#green-fan {
+  left: 430px;
+  top: 20px;
+}
+
+#green-fan:hover {
+  /* Center expand on hover */
+  left: 428px;
+  top: 18px;
+}
+
+#green-fridge {
+  left: 658px;
+  top: 260px;
+}
+
+#green-fridge:hover {
+  left: 656px;
+  top: 258px;
+}
+
+#green-floor {
+  left: 510px;
+  top: 516px;
+}
+
+#green-floor:hover {
+  left: 508px;
+  top: 514px;
+}
+
 /* PROGRESS BAR */
 .progress {
   width: 800px;
